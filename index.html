@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Halloween</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #2c2c2c; /* Fundo escuro */
+      color: #f9f9f9; /* Texto claro */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+    
+    h1 {
+      font-size: 3rem;
+      color: #ff7518; /* Laranja de Halloween */
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    }
+    
+    p {
+      font-size: 1.2rem;
+      color: #ddd; /* Texto mais claro */
+      max-width: 600px;
+    }
+
+    .button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 1.1rem;
+      color: white;
+      background-color: #a52a2a; /* Marrom escuro */
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    .button:hover {
+      background-color: #8b0000; /* Vermelho escuro */
+    }
+    
+    footer {
+      position: absolute;
+      bottom: 20px;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+    
+    .random-box {
+      background-color: #444; /* Caixa escura */
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+      margin-top: 30px;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .random-box:hover {
+      transform: scale(1.05);
+    }
+    
+    /* Animações e efeitos */
+    @keyframes randomColor {
+      0% { background-color: #ff7518; }
+      25% { background-color: #ffcc00; }
+      50% { background-color: #8a2be2; }
+      75% { background-color: #ff7518; }
+      100% { background-color: #ffcc00; }
+    }
+
+    .random-box {
+      animation: randomColor 5s infinite;
+    }
+
+    /* Adicionando um ícone de abóbora */
+    .pumpkin {
+      width: 100px;
+      height: auto;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Bem-vindo à Página de Halloween!</h1>
+  <p>Prepare-se para uma experiência assustadora e divertida. Aproveite o clima de Halloween!</p>
+
+  <div class="random-box">
+    <p>Conteúdo aleatório! A cor pode mudar a cada pouco...</p>
+  </div>
+
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Pumpkin_icon.svg/1200px-Pumpkin_icon.svg.png" alt="Abóbora" class="pumpkin">
+
+  <button class="button" onclick="alert('Você clicou no botão! Cuidado com os fantasmas!')">Clique Aqui</button>
+
+  <footer>
+    <p>Feito com carinho por ChatGPT - 2025</p>
+  </footer>
+
+</body>
+</html>
